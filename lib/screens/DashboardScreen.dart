@@ -439,9 +439,9 @@ class _DashboardState extends State<Dashboard> {
                                   ),
                                 ),
                                 Container(
-                                  width: MediaQuery.of(context).size.width/6.3,
+                                  width: MediaQuery.of(context).size.width/5.4,
                                   child: Text(
-                                    '11,080',
+                                    '\u20B9'+'11,080',
                                     style: TextStyle(
                                         fontWeight: FontWeight.w600,
                                         fontSize: 18,
@@ -560,9 +560,9 @@ class _DashboardState extends State<Dashboard> {
                               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                               children: <Widget>[
                                 Container(
-                                  width: MediaQuery.of(context).size.width/3,
+                                  width: MediaQuery.of(context).size.width/3.2,
                                   child: Text(
-                                    '150',
+                                    '\u20B9'+'11,080',
                                     style: TextStyle(
                                         fontWeight: FontWeight.w600,
                                         fontSize: 18
@@ -570,9 +570,10 @@ class _DashboardState extends State<Dashboard> {
                                   ),
                                 ),
                                 Container(
-                                  width: MediaQuery.of(context).size.width/6,
+//                                  width: MediaQuery.of(context).size.width/5.4,
+                                padding: EdgeInsets.only(left: 10),
                                   child: Text(
-                                    '12,000',
+                                    '\u20B9'+'11,080',
                                     style: TextStyle(
                                         fontWeight: FontWeight.w600,
                                         fontSize: 18,
@@ -581,9 +582,10 @@ class _DashboardState extends State<Dashboard> {
                                   ),
                                 ),
                                 Container(
-                                  width: MediaQuery.of(context).size.width/6.42,
+//                                  width: MediaQuery.of(context).size.width/5.4,
+                                  padding: EdgeInsets.only(left: 10),
                                   child: Text(
-                                    '11,080',
+                                    '\u20B9'+'11,080',
                                     style: TextStyle(
                                         fontWeight: FontWeight.w600,
                                         fontSize: 18,
@@ -625,6 +627,115 @@ class _DashboardState extends State<Dashboard> {
                             ),
                           ],
                         ),
+                      )
+                    ],
+                  ),
+                ),
+              ),
+              SizedBox(
+                height: 45,
+              ),
+              Card(
+                child: Container(
+                  width: MediaQuery.of(context).size.width,
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: <Widget>[
+                      Container(
+                  color: Color(0xFFd5ebf0),
+                        child: Row(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: <Widget>[
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: <Widget>[
+                                Row(
+                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  children: <Widget>[
+                                    Container(
+                                      margin: EdgeInsets.symmetric(horizontal: 10,vertical: 10),
+                                      height: 30,
+                                      width: 30,
+                                      decoration: BoxDecoration(
+                                          image: DecorationImage(
+                                              image: AssetImage('assets/images/Group.png')
+                                          )
+                                      ),
+                                    ),
+                                    Container(
+                                      height: 30,
+                                      width: 30,
+                                      decoration: BoxDecoration(
+                                          image: DecorationImage(
+                                              image: AssetImage('assets/images/Group 1467.png')
+                                          )
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                                Row(
+                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                  children: <Widget>[
+                                    Container(
+                                      margin: EdgeInsets.symmetric(horizontal: 10),
+                                      height: 30,
+                                      width: 30,
+                                      decoration: BoxDecoration(
+                                          image: DecorationImage(
+                                              image: AssetImage('assets/images/Group 1471.png')
+                                          )
+                                      ),
+                                    ),
+                                    Container(
+                                      height: 30,
+                                      width: 30,
+                                      decoration: BoxDecoration(
+                                          image: DecorationImage(
+                                              image: AssetImage('assets/images/Group 1469.png')
+                                          )
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                                SizedBox(
+                                  height: 13,
+                                )
+                              ],
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.only(left: 10,top: 15),
+                              child: Column(
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: <Widget>[
+                                  Text(
+                                    "24 Jan '20",
+                                    style: TextStyle(
+                                        color: Colors.grey,
+                                        fontWeight: FontWeight.w600
+                                    ),
+                                  ),
+                                  SizedBox(
+                                    height: 10,
+                                  ),
+                                  Text(
+                                    "All in trip",
+                                    style: TextStyle(
+                                        fontSize: 18,
+                                        fontWeight: FontWeight.w700,
+                                        color: Colors.green
+                                    ),
+                                  )
+                                ],
+                              ),
+                            )
+                          ],
+                        ),
+                      ),
+                      Container(
+                        height: MediaQuery.of(context).size.height/9.2,
+                        width: MediaQuery.of(context).size.width,
                       )
                     ],
                   ),
