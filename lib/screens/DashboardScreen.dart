@@ -6,15 +6,15 @@ class Dashboard extends StatefulWidget {
 }
 
 class _DashboardState extends State<Dashboard> {
-  List<DashClass>allDetails=[];
+//  List<DashClass>allDetails=[];
 
   @override
   void initState() {
     super.initState();
-    allDetails.add(DashClass('assets/images/Group.png', 'Trips', "22 Oct '20", "23 Oct '20",5));
-    allDetails.add(DashClass('assets/images/Group 1467.png', 'Stock Keeping Units', "22 Oct '20", "23 Oct '20",10180));
-    allDetails.add(DashClass('assets/images/Group 1471.png', 'Stock Information', "22 Oct '20", "",11080));
-    allDetails.add(DashClass('assets/images/Group 1469.png', 'Payments', "22 Oct '20", "23 Oct '20",11080));
+//    allDetails.add(DashClass('assets/images/Group.png', 'Trips', "22 Oct '20", "23 Oct '20",5));
+//    allDetails.add(DashClass('assets/images/Group 1467.png', 'Stock Keeping Units', "22 Oct '20", "23 Oct '20",10180));
+//    allDetails.add(DashClass('assets/images/Group 1471.png', 'Stock Information', "22 Oct '20", "",11080));
+//    allDetails.add(DashClass('assets/images/Group 1469.png', 'Payments', "22 Oct '20", "23 Oct '20",11080));
   }
   @override
   Widget build(BuildContext context) {
@@ -752,13 +752,13 @@ class _DashboardState extends State<Dashboard> {
   }
 }
 
-class DashClass{
-  final String imageUrl;
-  final String name;
-  final String startDate;
-  final String endDate;
-  final int unSettledPrice;
-
-  DashClass(this.imageUrl, this.name, this.startDate, this.endDate, this.unSettledPrice);
-
-}
+//class DashClass{
+//  final String imageUrl;
+//  final String name;
+//  final String startDate;
+//  final String endDate;
+//  final int unSettledPrice;
+//
+//  DashClass(this.imageUrl, this.name, this.startDate, this.endDate, this.unSettledPrice);
+//
+//}
